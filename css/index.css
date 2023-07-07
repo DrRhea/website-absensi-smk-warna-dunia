@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+body, button, input {
+  font-family: Poppins, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: auto;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 3px 3px 15px rgba(213, 213, 213, .5);
+}
+
+.link-kel {
+  display: flex;
+  gap: 1100px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.search-bar {
+  width: 400px;
+  height: 50px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.tombol-aksi {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.tombol-aksi a svg {
+  width: 40px;
+  padding: 5px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(211, 211, 211, 0.6);
+}
+
+.tombol-aksi .tambah-data-p {
+  fill: #21ba45;
+}
+
+.tombol-aksi .cetak-data-p {
+  fill: #db2828;
+}
+
+.tombol-aksi .lihat-data-p {
+  fill: #2185d0;
+}
+
+.tambah-data-p,
+.cetak-data-p,
+.lihat-data-p {
+  transition: .3s;
+}
+
+.tambah-data-p:hover,
+.cetak-data-p:hover,
+.lihat-data-p:hover {
+  opacity: .7;
+}
+
+button {
+  cursor: pointer;
+}
+
+.edit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.edit svg {
+  width: 40px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(211, 211, 211, 0.6);
+}
+
+.update-data-p {
+  fill: #21ba45;
+  transition: .3s;
+}
+
+.hapus-data-p {
+  fill: #db2828;
+  transition: .3s;
+}
+
+.update-data-p:hover,
+.hapus-data-p:hover {
+  opacity: .7;
+}
+
+.absen button {
+  width: 50px;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 3px;
+  transition: .3s;
+}
+
+.hadir {
+  background: rgb(70, 70, 200);
+  color: white;
+  box-shadow: 3px 3px 15px rgba(211, 211, 211, 1)
+}
+
+.absen button:hover {
+  opacity: .9;
+}
+
+.edit button {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.tombol-edit:hover,
+.tombol-hapus:hover {
+  opacity: .8;
+}
+
+a.logout {
+  align-self: flex-end;
+}
+
+table {
+  border-spacing: 30px;
+  font-size: 20px;
+}
+
+button.hadir {
+  height: 40px;
+  width: 80px;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 320px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  th, td, button {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 940px) {
+  table {
+    border-spacing: 4px;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 1024px) {
+  section.container {
+    width: 90vh;
+  }
+
+  table {
+    border-spacing: 10px !important;
+    font-size: 16px !important;
+  }
+
+}
+
+@media (max-width: 1240px) {
+  
+  table {
+    border-spacing: 20px;
+    font-size: 20px;
+  }
+  
+  button.hadir {
+    height: 35px;
+    width: 70px;
+    font-size: 14px;
+  }
+
+  .link-kel {
+    gap: 700px;
+  }
+}
+
+@media print {
+
+  th#ubah-data,
+  .search-bar,
+  .logout,
+  .tombol-aksi,
+  .edit {
+    display: none;
+  }
+
+  .edit svg,
+  .container {
+    box-shadow: none;
+  }
+}
